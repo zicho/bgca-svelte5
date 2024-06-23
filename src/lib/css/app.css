@@ -132,8 +132,16 @@
 	--full-svh-minus-navbar: calc(100svh - var(--navbar-height));
 }
 
+.navbar-height {
+	height: var(--navbar-height);
+}
+
+.navbar-top-margin {
+	margin-top: var(--navbar-height);
+}
+
 .full-height-minus-navbar {
-	height: var(--full-svh-minus-navbar);
+	min-height: var(--full-svh-minus-navbar);
 }
 
 /* custom.css or your main CSS file */
@@ -157,4 +165,12 @@
 .menu-horizontal li a:hover {
 	background: none !important;
 	@apply text-primary-content;
+}
+
+.prose h1 {
+	@apply font-extralight text-zinc-500 tracking-tight m-0 p-0 mb-6;
+}
+
+.prose h2 {
+	@apply font-extralight text-zinc-600 tracking-tight m-0 p-0 mb-4;
 }

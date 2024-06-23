@@ -1,3 +1,3 @@
-<div class="p-4 bg-base-200 full-height-minus-navbar">
+<div class="p-8 xl:p-12 full-height-minus-navbar">
 	<slot />
 </div>
