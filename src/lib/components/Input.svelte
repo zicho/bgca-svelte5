@@ -4,7 +4,7 @@
 
 	let {
 		id,
-		value,
+		value = $bindable(),
 		required,
 		label,
 		placeholder,
