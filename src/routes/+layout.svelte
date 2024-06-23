@@ -59,7 +59,7 @@
 	</div>
 	<div class="drawer-side">
 		{#if dev}
-			<button class="btn btn-primary"></button>
+			<button class="btn btn-error"></button>
 		{/if}
 		<label for="menu-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
 		<ul class="menu p-0 m-0 w-80 min-h-full bg-base-200">
