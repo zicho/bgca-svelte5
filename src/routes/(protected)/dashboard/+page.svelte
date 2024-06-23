@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ContentContainer from '$lib/layouts/page_elements/ContentContainer.svelte';
-	import StandardPageLayout from '$lib/layouts/pages/StandardPageLayout.svelte';
+	import ContentContainer from '$lib/ui/layouts/page_elements/ContentContainer.svelte';
+	import StandardPageLayout from '$lib/ui/layouts/pages/StandardPageLayout.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;

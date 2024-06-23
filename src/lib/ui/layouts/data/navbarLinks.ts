@@ -1,7 +1,8 @@
 // import { UserIcon, MailIcon, GameIcon, CalendarIcon, SignoutIcon, LoginIcon, RegisterIcon, DashboardIcon } from "$lib/data/icons";
 // import type { NavbarLinkProps } from "$lib/components/props/components/NavbarLinkProps";
 
-import type { NavbarLinkProps } from '../props/LayoutProps';
+import type { NavbarLinkProps } from '../page_elements/props/LayoutProps';
+import { DashboardIcon, LoginIcon, RegisterIcon } from './icons';
 
 const generateNavbarLinks = (): NavbarLinkProps[] => {
 	return [
@@ -10,7 +11,7 @@ const generateNavbarLinks = (): NavbarLinkProps[] => {
 			displayText: 'Dashboard',
 			id: 'navbar-link-dashboard',
 			aria: 'Go to dashboard',
-			// icon: DashboardIcon,
+			icon: DashboardIcon,
 			authOnly: true
 		},
 		{
@@ -18,7 +19,7 @@ const generateNavbarLinks = (): NavbarLinkProps[] => {
 			displayText: 'Login',
 			id: 'navbar-link-login',
 			aria: 'Log in',
-			// icon: LoginIcon,
+			icon: LoginIcon,
 			authOnly: false
 		},
 		{
@@ -26,7 +27,7 @@ const generateNavbarLinks = (): NavbarLinkProps[] => {
 			displayText: 'Register',
 			id: 'navbar-link-register',
 			aria: 'Register a new user',
-			// icon: RegisterIcon,
+			icon: RegisterIcon,
 			authOnly: false
 		}
 	];

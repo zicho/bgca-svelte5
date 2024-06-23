@@ -12,6 +12,7 @@ export type NavbarLinkProps = {
 	aria: string;
 	icon?: typeof SvelteComponent<any, SVGAElement>;
 	authOnly: boolean;
+	active?: boolean;
 	classes?: string;
 };
 

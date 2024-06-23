@@ -3,7 +3,7 @@
 	import Divider from '$lib/components/Divider.svelte';
 	import Input from '$lib/components/Input.svelte';
 	import LinkButton from '$lib/components/LinkButton.svelte';
-	import CenteredFormLayout from '../../../lib/layouts/pages/CenteredFormLayout.svelte';
+	import CenteredFormLayout from '../../../lib/ui/layouts/pages/CenteredFormLayout.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;

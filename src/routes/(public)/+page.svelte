@@ -1,5 +1,5 @@
 <script>
-	import StandardPageLayout from '$lib/layouts/pages/StandardPageLayout.svelte';
+	import StandardPageLayout from '$lib/ui/layouts/pages/StandardPageLayout.svelte';
 </script>
 
 <StandardPageLayout>
