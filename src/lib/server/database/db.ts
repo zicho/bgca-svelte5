@@ -4,7 +4,7 @@ import * as schema from '$lib/server/database/schema/_index';
 import { createClient } from '@libsql/client';
 import { drizzle } from 'drizzle-orm/libsql';
 
-const url = dev ? 'file:local.db' : PRIVATE_TURSO_DB_URL;
+const url = PRIVATE_TURSO_DB_URL;
 
 if (!url) {
 	throw new Error('TURSO_DB_URL is not set');
