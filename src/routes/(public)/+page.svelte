@@ -3,7 +3,7 @@
 </script>
 
 <StandardPageLayout>
-	<article class="prose lg:prose-xl">
+	<article class="prose">
 		<h1 class="font-extralight">Welcome to BGCA!</h1>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
