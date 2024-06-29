@@ -25,7 +25,7 @@ export default {
 					accent: colors.slate['300'],
 					'accent-content': colors.stone['800'],
 					error: colors.red['500'],
-					success: colors.emerald['400'],
+					success: colors.green['400'],
 					info: colors.sky['300'],
 					warning: colors.amber['300']
 				}

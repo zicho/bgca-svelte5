@@ -43,8 +43,8 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	// logger.info(`received request to ${event.url}`, event.locals.user);
 
-	if (event.route.id?.includes('(non_authed)')) {
-		redirect(302, '/dashboard');
+	if (event.route.id?.includes('(non_auth)')) {
+		redirect(302, '/');
 	}
 
 	return resolve(event);

@@ -1,10 +1,12 @@
 <script>
+	import { getUserState } from '$lib/state/userState.svelte';
 	import StandardPageLayout from '$lib/ui/layouts/pages/StandardPageLayout.svelte';
 </script>
 
 <StandardPageLayout>
 	<article class="prose">
 		<h1 class="font-extralight">Welcome to BGCA!</h1>
+		{getUserState()?.username}
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Imperdiet nulla malesuada pellentesque elit eget gravida cum

@@ -38,7 +38,7 @@
 		<Input
 			id="confirm_password"
 			type="password"
-			label="Password"
+			label="Confirm Password"
 			bind:value={$form.confirm_password}
 			errors={$errors.confirm_password}
 			{...$constraints.confirm_password}

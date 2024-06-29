@@ -2,15 +2,19 @@
 	import { dev } from '$app/environment';
 	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
+	import Input from '$lib/components/Input.svelte';
 	import '$lib/css/app.css';
+	import { setUserState } from '$lib/state/userState.svelte';
 	import { MenuIcon } from '$lib/ui/layouts/data/icons';
 	import generateNavbarLinks from '$lib/ui/layouts/data/navbarLinks';
 	import NavbarLink from '$lib/ui/layouts/page_elements/NavbarLink.svelte';
-	import type { Snippet } from 'svelte';
-	// import type { LayoutData } from './$types';
 
-	// export let data: LayoutData;
-	const { children }: { children: Snippet } = $props();
+	let { children, data } = $props();
+	const { user } = $derived(data);
+	setUserState(user);
+
+	// const user = setUserState(data.user);
+	// const session = setSessionState(data.session);
 
 	const links = generateNavbarLinks();
 
@@ -36,6 +40,7 @@
 			<div class="flex-1 pl-4 text-2xl font-light tracking-widest"><a href="/">BGCA</a></div>
 			<div class="flex-none hidden lg:block h-full">
 				<ul class="menu menu-horizontal p-0 m-0 h-full flex-1 items-center">
+					{#if user}<li>{user.username}</li>{/if}
 					{#each links as link}
 						<NavbarLink {...link} active={$page.url.toString().includes(link.url)} />
 					{/each}
@@ -45,6 +50,7 @@
 		<div
 			class="full-height-minus-navbar navbar-top-margin bg-gradient-to-br from-base-100 to-base-300"
 		>
+			{#if user}<Input id="test" type="text" label="Test" bind:value={user.username} />{/if}
 			{@render children()}
 		</div>
 	</div>

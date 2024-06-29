@@ -109,10 +109,6 @@
 	@apply text-primary bg-warning;
 }
 
-.btn-primary:hover {
-	@apply bg-zinc-700;
-}
-
 .btn-primary.btn-outline {
 	@apply border-base-300;
 }

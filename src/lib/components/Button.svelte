@@ -8,7 +8,7 @@
 	{id}
 	data-testid={id}
 	name={id}
-	class={`w-full btn btn-${variant} ${outline ? 'btn-outline' : ''} ${classes}`}
+	class={`hover:bg-primary-hover w-full btn btn-${variant} ${outline ? 'btn-outline' : ''} ${classes}`}
 	{type}
 >
 	{label}
