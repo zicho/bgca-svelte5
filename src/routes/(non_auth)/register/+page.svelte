@@ -19,7 +19,7 @@
 
 <CenteredFormLayout errorMessage={$message}>
 	<form use:enhance method="post" class="flex flex-col gap-y-4">
-		<h1 class="text-center text-2xl text-zinc-600">Login</h1>
+		<h1 class="text-center text-2xl text-zinc-600">Register</h1>
 		<Input
 			id="username"
 			label="Username"

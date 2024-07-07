@@ -6,4 +6,5 @@ export type ButtonProps = {
 	disabled?: boolean;
 	classes?: string;
 	type?: 'button' | 'submit';
+	onclick?: () => void;
 };
